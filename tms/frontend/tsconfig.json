@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "sourceMap": true,       // Enable source maps
+    "inlineSources": true,   // Include TypeScript source in the source maps
+    "noImplicitAny": false,
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*",
+    "src/types/**/*.d.ts" // Make sure TypeScript includes your declaration files
+  ]
+}

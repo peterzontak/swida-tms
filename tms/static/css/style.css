@@ -1,0 +1,150 @@
+/* RESET */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--default-font-family);
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+button,
+label, .btn {
+    cursor: pointer;
+}
+
+
+
+
+/* RESET */
+
+
+
+
+/* GLOBAL */
+.table td{
+    vertical-align: middle;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
+
+  font-size: 1em;
+}
+
+.action-btn{
+    cursor: pointer;
+    user-select: none;
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.btn-green{
+    color: rgb(57, 163, 43);
+}
+.btn-green:hover{
+    color: rgb(29, 121, 17);
+    opacity: 1;
+}
+.btn-red{
+    color: rgb(196, 69, 37);
+}
+.btn-red:hover{
+    color: rgb(153, 41, 13);
+    opacity: 1;
+}
+
+table{
+    border-radius: 0.1em;
+    box-shadow: 0 0 0.1em 0.1em rgb(230, 230, 230);
+}
+th {
+    text-align: center;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+/* GLOBAL */
+
+
+
+
+
+/* Transport Orders */
+
+table.transport-orders-table td:not(:last-of-type){
+    border-right: 1px solid rgb(230, 230, 230);
+}
+table.transport-orders-table td{
+    text-align: center;
+}
+
+table.transport-orders-table tbody tr {
+    color: rgb(110, 110, 110);
+}
+
+table.transport-orders-table tbody tr:hover {
+    color: rgb(31, 31, 31);
+}
+
+table.transport-orders-table .waypoints-table {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+table.transport-orders-table .waypoints-table > div{
+    display: flex;
+}
+table.transport-orders-table .waypoints-table > div > span{
+    flex: 1;
+}
+
+.row-menu{
+    display: flex;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* .modal-content{
+    position: relative;
+} */
+
+
+
+/* Transport Orders */
+
+

@@ -1,0 +1,34 @@
+{
+    "env": "dev",
+    "api": {
+        "basePath": "/api/",
+        "resources": {
+            "transport_order": {
+                "index": "transport-orders",
+                "show": "transport-orders/show",
+                "add": "transport-orders/add",
+                "delete": "transport-orders/delete",
+                "filters": {
+                    "customer_name": "filter/transport-orders/customer_name",
+                    "transport_order_date_from_to": "filter/transport-orders/transport_order_date_from_to",
+                    "transport_order_date_from": "filter/transport-orders/transport_order_date_from",
+                    "transport_order_date_to": "filter/transport-orders/transport_order_date_to"
+                }
+            },
+            "waypoint": {
+                "index": "waypoints",
+                "show": "waypoints/show",
+                "add": "waypoints/add",
+                "delete": "waypoints/delete"
+            },
+            "customer": {
+                "index": "customers"
+            }
+        }
+    },
+    "routes": {
+        "home": "/",
+        "transport_orders": "transport-orders",
+        "waypoints": "waypoints"
+    }
+}

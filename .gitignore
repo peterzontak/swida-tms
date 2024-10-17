@@ -1,0 +1,32 @@
+# Django-specific files
+*.log               # Log files
+*.pot               # Translation template files
+*.pyc               # Compiled Python files
+*/__pycache__/        # Directory for compiled Python bytecode
+local_settings.py   # Local configuration settings
+
+# Virtual Environment
+.env                # Environment variables file
+venv                # Virtual environment directory
+venv/               # Virtual environment directory
+**/venv/               # Virtual environment directory
+venv/*
+env/                # Alternative virtual environment directory
+
+# IDE-specific files
+.idea/              # PyCharm project settings
+.vscode/            # Visual Studio Code settings
+
+# OS-specific files
+.DS_Store           # macOS metadata file
+Thumbs.db           # Windows thumbnail cache
+
+# Other ignored files
+.coverage           # Coverage report files
+.tox/               # Tox testing environment directory
+.eggs/              # Egg package directory
+
+# Frontend
+node_modules
+_/
+**/__pycache__/
