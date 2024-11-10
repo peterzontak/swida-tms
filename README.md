@@ -1,7 +1,7 @@
 # Transport Management System (TMS)
 
 ## Models Structure
-(TransportOrder has many Waypoints)
+(Every TransportOrder can have multiple Waypoints.)
 
 ### TransportOrder
 - **order_number**
