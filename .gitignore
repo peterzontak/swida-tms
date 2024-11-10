@@ -29,6 +29,7 @@ Thumbs.db           # Windows thumbnail cache
 
 # Frontend
 node_modules
+dist
 _/
 **/__pycache__/
 tms/staticfiles/
