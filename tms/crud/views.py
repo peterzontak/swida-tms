@@ -9,24 +9,24 @@ from rest_framework.views import APIView
 from rest_framework import status
 
 
-class TransportOrderDetailView(APIView):
-    def get(self, request, id):
-        try:
-            item = TransportOrder.objects.get(pk=id)
-            serializer = TransportOrderSerializer(item)
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        except TransportOrder.DoesNotExist:
-            return Response({'error': 'Transport order with id "{id}" not found'}, status=status.HTTP_404_NOT_FOUND)
+# class TransportOrderDetailView(APIView):
+#     def get(self, request, id):
+#         try:
+#             item = TransportOrder.objects.get(pk=id)
+#             serializer = TransportOrderSerializer(item)
+#             return Response(serializer.data, status=status.HTTP_200_OK)
+#         except TransportOrder.DoesNotExist:
+#             return Response({'error': 'Transport order with id "{id}" not found'}, status=status.HTTP_404_NOT_FOUND)
 
 
-class WaypointDetailView(APIView):
-    def get(self, request, id):
-        try:
-            item = TransportOrder.objects.get(pk=id)
-            serializer = TransportOrderSerializer(item)
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        except TransportOrder.DoesNotExist:
-            return Response({'error': 'Transport order with id "{id}" not found'}, status=status.HTTP_404_NOT_FOUND)
+# class WaypointDetailView(APIView):
+#     def get(self, request, id):
+#         try:
+#             item = Waypoint.objects.get(pk=id)
+#             serializer = WaypointSerializer(item)
+#             return Response(serializer.data, status=status.HTTP_200_OK)
+#         except TransportOrder.DoesNotExist:
+#             return Response({'error': 'Waypoint with id "{id}" not found'}, status=status.HTTP_404_NOT_FOUND)
 
 
 
