@@ -57,6 +57,8 @@ During testing i registered JSON exception middleware for better error console o
 #### Static assets were collected
 - `python manage.py collectstatic --noinput`
 
+### Added new settings recommended by
+- `manage.py check --deploy`.
 
 ## TODO
 
