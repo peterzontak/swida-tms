@@ -26,10 +26,42 @@ SECRET_KEY = os.getenv(
     "SECRET_KEY", "django-insecure-r(6dd3yaw_05m5kxki1vb^r6v@x^-g#zi_to7487*!)08oxwf)"
 )
 
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True  # Apply HSTS to all subdomains
+SECURE_HSTS_PRELOAD = True  # Request inclusion in browsers' HSTS preload list
+SECURE_SSL_REDIRECT = os.getenv(
+    "SECURE_SSL_REDIRECT", False
+)
+SESSION_COOKIE_SECURE = os.getenv(
+    "SESSION_COOKIE_SECURE", False
+)
+CSRF_COOKIE_SECURE = os.getenv(
+    "CSRF_COOKIE_SECURE", False
+)
+
+DEFAULT_FROM_EMAIL = os.getenv(
+    "DEFAULT_FROM_EMAIL", "tms@localhost"
+)
+EMAIL_HOST = os.getenv(
+    "EMAIL_HOST", "localhost"
+)
+EMAIL_PORT = os.getenv(
+    "EMAIL_PORT", 25
+)
+EMAIL_HOST_USER = os.getenv(
+    "EMAIL_HOST_USER", ""
+)
+EMAIL_HOST_PASSWORD = os.getenv(
+    "EMAIL_HOST_PASSWORD", ""
+)
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS", "localhost,127.0.0.1"
+).split(",")
 # ALLOWED_HOSTS = ['yourdomain.com', 'www.yourdomain.com']
 
 
